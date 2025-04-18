@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+button {
+    border: transparent;
+    background-color: transparent;
+    font-family: inherit;
+    color: inherit;
+}
+select {
+    background-color: transparent;
+    color: inherit;
+    font-family: inherit;
+}
+a {
+    text-decoration: none;
+}
+input {
+    font-family: inherit;
+}

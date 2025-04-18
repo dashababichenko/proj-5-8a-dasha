@@ -5,66 +5,1443 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
 </head>
 <body>
-    <script src="./index.js"></script>
-</body>
-</html>
-<div>
-    <p>You already know ?</p>
-
-</div>
-
-
-  <div class="section-title">Useful Pet Knowledge</div>
-  
+  <header>
+    <div class="container header-container">
+      <div class="header-modal">
+        <button class="header-modal-open">
+        <svg class="header-modal-open-burger" xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+          <path d="M6.6665 23.1667H25.3332M6.6665 16.5H25.3332M6.6665 9.83334H25.3332" stroke="#00171F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <nav class="header-modal-nav">
+          <ul class="header-modal-nav-list">
+            <li class="header-modal-nav-list-item">
+              <a class="header-modal-nav-list-item-link" href="#">Home</a>
+            </li>
+            <li class="header-modal-nav-list-item">
+              <a class="header-modal-nav-list-item-link" href="#">Category</a>
+            </li>
+            <li class="header-modal-nav-list-item">
+              <a class="header-modal-nav-list-item-link" href="#">About</a>
+            </li>
+            <li class="header-modal-nav-list-item">
+              <a class="header-modal-nav-list-item-link" href="#">Contact</a>
+            </li>
+          </ul>
+          </nav>
+          <button class="header-modal-close"></button>
+      </div>
+      <a class="header-link" href="#">
+        <img class="header-link-logo" src="./Frame.svg" alt="">
+      </a>
+    <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-list-item">
+            <a class="header-nav-list-item-link" href="#">Home</a>
+          </li>
+          <li class="header-nav-list-item">
+            <a class="header-nav-list-item-link" href="#">Category</a>
+          </li>
+          <li class="header-nav-list-item">
+            <a class="header-nav-list-item-link" href="#">About</a>
+          </li>
+          <li class="header-nav-list-item">
+            <a class="header-nav-list-item-link" href="#">Contact</a>
+          </li>
+        </ul>
+        </nav>
+          <button>
+          <svg class="header-container-find-icon">
+            <use href="./symbol-defs-search.svg#icon-Vector"></use>
+          </svg>
+      </button>
+      <div class="header-container-search">
+        <svg class="header-container-search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M18.0918 16.9083L15.0002 13.8417C16.2002 12.3454 16.7814 10.4461 16.6242 8.53443C16.4669 6.62276 15.5832 4.844 14.1548 3.56388C12.7263 2.28377 10.8617 1.5996 8.94427 1.65207C7.02686 1.70454 5.20243 2.48965 3.84612 3.84596C2.4898 5.20228 1.70469 7.02671 1.65222 8.94411C1.59976 10.8615 2.28392 12.7262 3.56403 14.1546C4.84415 15.5831 6.62292 16.4668 8.53458 16.624C10.4462 16.7813 12.3455 16.2001 13.8418 15L16.9085 18.0667C16.986 18.1448 17.0781 18.2068 17.1797 18.2491C17.2812 18.2914 17.3902 18.3132 17.5002 18.3132C17.6102 18.3132 17.7191 18.2914 17.8206 18.2491C17.9222 18.2068 18.0144 18.1448 18.0918 18.0667C18.242 17.9113 18.326 17.7036 18.326 17.4875C18.326 17.2714 18.242 17.0637 18.0918 16.9083ZM9.16683 15C8.01311 15 6.88529 14.6579 5.926 14.0169C4.96672 13.3759 4.21904 12.4649 3.77753 11.399C3.33602 10.3331 3.2205 9.16021 3.44558 8.02865C3.67066 6.8971 4.22624 5.8577 5.04204 5.04189C5.85785 4.22608 6.89725 3.67051 8.0288 3.44543C9.16036 3.22035 10.3332 3.33587 11.3992 3.77738C12.4651 4.21889 13.3761 4.96657 14.0171 5.92585C14.658 6.88514 15.0002 8.01295 15.0002 9.16668C15.0002 10.7138 14.3856 12.1975 13.2916 13.2915C12.1977 14.3854 10.7139 15 9.16683 15Z" fill="#667479"/>
+          </svg>
+        <input class="header-input" type="text" placeholder="Search something here!">
+      </div>
+          
+        <div class="header-btn">
+        <div class="header-btn-join">
+        <button class="header-btn-join-text">Join the community</button>
+        </div>
+      <div>
+        <button class="header-btn-frame">
+          <svg class="header-btn-frame-icon">
+            <use href="./symbol-defs.svg#icon-Frame-1"></use>
+          </svg>
+          <select class="header-btn-frame-vnd" name="" id="">
+            <option class="header-btn-frame-vnd-op">VND</option>
+          </select>
+        </button>
+      </div>
+      </div>
+      </div>
+    </div> 
+  </header>
+  <main><section id="hero" class="hero">
+    <div class="hero-container">
+      <div class="hero-wrapper">
+        <h1 class="hero-main-title">One more friend</h1>
+        <h2 class="hero-title">Thousands more fun!</h2>
+        <p class="hero-text">
+          Having a pet means you have more joy, a new friend, a happy person
+          who will always be with you to have fun. We have 200+ different pets
+          that can meet your needs!
+        </p>
+        <ul class="hero-list">
+          <li class="hero-list-item">
+            <button class="hero-list-item-btn">View Intro</button>
+            <svg class="hero-list-item-svg">
+              <use xlink:href="./img/symbol-defs.svg#play"></use>
+            </svg>
+          </li>
+          <li class="hero-list-item">
+            <button class="hero-list-item-btn">Explore Now</button>
+          </li>
+        </ul>
+        <div class="hero-img">
+          <picture>
+            <source
+              type="image/avif"
+              srcset="
+                ./img/hero/main-414-1x.avif 1x,
+                ./img/hero/main-414-2x.avif 2x
+              "
+              media="(min-width: 413px) and (max-width: 1439px)"
+            />
+            <source
+              type="image/avif"
+              srcset="
+                ./img/hero/main-1440-1x.avif 1x,
+                ./img/hero/main-1440-2x.avif 2x
+              "
+              media="(min-width: 1440px)"
+            />
+            <source
+              type="image/webp"
+              srcset="
+                ./img/hero/main-414-1x.webp 1x,
+                ./img/hero/main-414-2x.webp 2x
+              "
+              media="(min-width: 413px) and (max-width: 1439px)"
+            />
+            <source
+              type="image/webp"
+              srcset="
+                ./img/hero/main-1440-1x.webp 1x,
+                ./img/hero/main-1440-2x.webp 2x
+              "
+              media="(min-width: 1440px)"
+            />
+            <source
+              type="image/jpg"
+              srcset="
+                ./img/hero/main-414-1x.jpg 1x,
+                ./img/hero/main-414-2x.jpg 2x
+              "
+              media="(min-width: 413px) and (max-width: 1439px)"
+            />
+            <source
+              type="image/jpg"
+              srcset="
+                ./img/hero/main-1440-1x.jpg 1x,
+                ./img/hero/main-1440-2x.jpg 2x
+              "
+              media="(min-width: 1440px)"
+            />
+            <img src="" alt="woman-with-dog" />
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="pets" class="pets">
+    <div class="pets-container">
+      <div class="pets-wrapper">
+        <div>
+          <h4 class="pets-title">Whats new?</h4>
+          <h3 class="pets-main-title">Take a look at some of our pets</h3>
+        </div>
+        <button class="pets-btn">
+          View more
+          <svg class="pets-btn-svg">
+            <use xlink:href="./img/symbol-defs.svg#arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+      <ul class="pets-list">
+        <li class="pets-list-item">
+          <div class="pets-list-item-container">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/pets/first-dog-414-1x.avif 1x,
+                  ./img/pets/first-dog-414-2x.avif 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/pets/first-dog-1440-1x.avif 1x,
+                  ./img/pets/first-dog-1440-2x.avif 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/pets/first-dog-414-1x.webp 1x,
+                  ./img/pets/first-dog-414-2x.webp 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/pets/first-dog-1440-1x.webp 1x,
+                  ./img/pets/first-dog-1440-2x.webp 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/pets/first-dog-414-1x.jpg 1x,
+                  ./img/pets/first-dog-414-2x.jpg 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/pets/first-dog-1440-1x.jpg 1x,
+                  ./img/pets/first-dog-1440-2x.jpg 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <img class="pets-list-item-img" src="" alt="dog" />
+            </picture>
+            <div class="pets-list-item-content">
+              <h4 class="pets-list-item-title">MO231 - Pomeranian White</h4>
+              <ul class="pets-list-item-list">
+                <li class="pets-list-item-list-item">
+                  <h5 class="pets-list-item-list-item-title">Gene:</h5>
+                  <p class="pets-list-item-list-item-text">Male</p>
+                </li>
+                <svg class="pets-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#point"></use>
+                </svg>
+                <li class="pets-list-item-list-item">
+                  <h5 class="pets-list-item-list-item-title">Age:</h5>
+                  <p class="pets-list-item-list-item-text">02 months</p>
+                </li>
+              </ul>
+              <p class="pets-list-item-text">6.900.000 VND</p>
+            </div>
+          </div>
+        </li>
+        <li class="pets-list-item">
+          <div class="pets-list-item-container">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/pets/second-dog-414-1x.avif 1x,
+                  ./img/pets/second-dog-414-2x.avif 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/pets/second-dog-1440-1x.avif 1x,
+                  ./img/pets/second-dog-1440-2x.avif 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/pets/second-dog-414-1x.webp 1x,
+                  ./img/pets/second-dog-414-2x.webp 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/pets/second-dog-1440-1x.webp 1x,
+                  ./img/pets/second-dog-1440-2x.webp 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/pets/second-dog-414-1x.jpg 1x,
+                  ./img/pets/second-dog-414-2x.jpg 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/pets/second-dog-1440-1x.jpg 1x,
+                  ./img/pets/second-dog-1440-2x.jpg 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <img class="pets-list-item-img" src="" alt="dog" />
+            </picture>
+            <div class="pets-list-item-content">
+              <h4 class="pets-list-item-title">MO502 - Poodle Tiny Yellow</h4>
+              <ul class="pets-list-item-list">
+                <li class="pets-list-item-list-item">
+                  <h5 class="pets-list-item-list-item-title">Gene:</h5>
+                  <p class="pets-list-item-list-item-text">Female</p>
+                </li>
+                <svg class="pets-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#point"></use>
+                </svg>
+                <li class="pets-list-item-list-item">
+                  <h5 class="pets-list-item-list-item-title">Age:</h5>
+                  <p class="pets-list-item-list-item-text">02 months</p>
+                </li>
+              </ul>
+              <p class="pets-list-item-text">3.900.000 VND</p>
+            </div>
+          </div>
+        </li>
+        <li class="pets-list-item">
+          <div class="pets-list-item-container">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/pets/third-dog-414-1x.avif 1x,
+                  ./img/pets/third-dog-414-2x.avif 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/pets/third-dog-1440-1x.avif 1x,
+                  ./img/pets/third-dog-1440-2x.avif 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/pets/third-dog-414-1x.webp 1x,
+                  ./img/pets/third-dog-414-2x.webp 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/pets/third-dog-1440-1x.webp 1x,
+                  ./img/pets/third-dog-1440-2x.webp 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/pets/third-dog-414-1x.jpg 1x,
+                  ./img/pets/third-dog-414-2x.jpg 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/pets/third-dog-1440-1x.jpg 1x,
+                  ./img/pets/third-dog-1440-2x.jpg 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <img class="pets-list-item-img" src="" alt="dog" />
+            </picture>
+            <div class="pets-list-item-content">
+              <h4 class="pets-list-item-title">MO102 - Poodle Tiny Sepia</h4>
+              <ul class="pets-list-item-list">
+                <li class="pets-list-item-list-item">
+                  <h5 class="pets-list-item-list-item-title">Gene:</h5>
+                  <p class="pets-list-item-list-item-text">Male</p>
+                </li>
+                <svg class="pets-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#point"></use>
+                </svg>
+                <li class="pets-list-item-list-item">
+                  <h5 class="pets-list-item-list-item-title">Age:</h5>
+                  <p class="pets-list-item-list-item-text">02 months</p>
+                </li>
+              </ul>
+              <p class="pets-list-item-text">4.000.000 VND</p>
+            </div>
+          </div>
+        </li>
+        <li class="pets-list-item">
+          <div class="pets-list-item-container">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/pets/fourth-dog-414-1x.avif 1x,
+                  ./img/pets/fourth-dog-414-2x.avif 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/pets/fourth-dog-1440-1x.avif 1x,
+                  ./img/pets/fourth-dog-1440-2x.avif 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/pets/fourth-dog-414-1x.webp 1x,
+                  ./img/pets/fourth-dog-414-2x.webp 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/pets/fourth-dog-1440-1x.webp 1x,
+                  ./img/pets/fourth-dog-1440-2x.webp 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/pets/fourth-dog-414-1x.jpg 1x,
+                  ./img/pets/fourth-dog-414-2x.jpg 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/pets/fourth-dog-1440-1x.jpg 1x,
+                  ./img/pets/fourth-dog-1440-2x.jpg 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <img class="pets-list-item-img" src="" alt="dog" />
+            </picture>
+            <div class="pets-list-item-content">
+              <h4 class="pets-list-item-title">
+                MO512 - Alaskan Malamute Grey
+              </h4>
+              <ul class="pets-list-item-list">
+                <li class="pets-list-item-list-item">
+                  <h5 class="pets-list-item-list-item-title">Gene:</h5>
+                  <p class="pets-list-item-list-item-text">Male</p>
+                </li>
+                <svg class="pets-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#point"></use>
+                </svg>
+                <li class="pets-list-item-list-item">
+                  <h5 class="pets-list-item-list-item-title">Age:</h5>
+                  <p class="pets-list-item-list-item-text">02 months</p>
+                </li>
+              </ul>
+              <p class="pets-list-item-text">8.900.000 VND</p>
+            </div>
+          </div>
+        </li>
+        <li class="pets-list-item">
+          <div class="pets-list-item-container">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/pets/fifth-dog-414-1x.avif 1x,
+                  ./img/pets/fifth-dog-414-2x.avif 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/pets/fifth-dog-1440-1x.avif 1x,
+                  ./img/pets/fifth-dog-1440-2x.avif 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/pets/fifth-dog-414-1x.webp 1x,
+                  ./img/pets/fifth-dog-414-2x.webp 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/pets/fifth-dog-1440-1x.webp 1x,
+                  ./img/pets/fifth-dog-1440-2x.webp 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/pets/fifth-dog-414-1x.jpg 1x,
+                  ./img/pets/fifth-dog-414-2x.jpg 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/pets/fifth-dog-1440-1x.jpg 1x,
+                  ./img/pets/fifth-dog-1440-2x.jpg 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <img class="pets-list-item-img" src="" alt="dog" />
+            </picture>
+            <div class="pets-list-item-content">
+              <h4 class="pets-list-item-title">
+                MO231 - Pembroke Corgi Cream
+              </h4>
+              <ul class="pets-list-item-list">
+                <li class="pets-list-item-list-item">
+                  <h5 class="pets-list-item-list-item-title">Gene:</h5>
+                  <p class="pets-list-item-list-item-text">Male</p>
+                </li>
+                <svg class="pets-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#point"></use>
+                </svg>
+                <li class="pets-list-item-list-item">
+                  <h5 class="pets-list-item-list-item-title">Age:</h5>
+                  <p class="pets-list-item-list-item-text">02 months</p>
+                </li>
+              </ul>
+              <p class="pets-list-item-text">7.900.000 VND</p>
+            </div>
+          </div>
+        </li>
+        <li class="pets-list-item">
+          <div class="pets-list-item-container">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/pets/sixth-dog-414-1x.avif 1x,
+                  ./img/pets/sixth-dog-414-2x.avif 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/pets/sixth-dog-1440-1x.avif 1x,
+                  ./img/pets/sixth-dog-1440-2x.avif 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/pets/sixth-dog-414-1x.webp 1x,
+                  ./img/pets/sixth-dog-414-2x.webp 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/pets/sixth-dog-1440-1x.webp 1x,
+                  ./img/pets/sixth-dog-1440-2x.webp 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/pets/sixth-dog-414-1x.jpg 1x,
+                  ./img/pets/sixth-dog-414-2x.jpg 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/pets/sixth-dog-1440-1x.jpg 1x,
+                  ./img/pets/sixth-dog-1440-2x.jpg 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <img class="pets-list-item-img" src="" alt="dog" />
+            </picture>
+            <div class="pets-list-item-content">
+              <h4 class="pets-list-item-title">
+                MO502 - Pembroke Corgi Tricolor
+              </h4>
+              <ul class="pets-list-item-list">
+                <li class="pets-list-item-list-item">
+                  <h5 class="pets-list-item-list-item-title">Gene:</h5>
+                  <p class="pets-list-item-list-item-text">Female</p>
+                </li>
+                <svg class="pets-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#point"></use>
+                </svg>
+                <li class="pets-list-item-list-item">
+                  <h5 class="pets-list-item-list-item-title">Age:</h5>
+                  <p class="pets-list-item-list-item-text">02 months</p>
+                </li>
+              </ul>
+              <p class="pets-list-item-text">9.000.000 VND</p>
+            </div>
+          </div>
+        </li>
+        <li class="pets-list-item">
+          <div class="pets-list-item-container">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/pets/seventh-dog-414-1x.avif 1x,
+                  ./img/pets/seventh-dog-414-2x.avif 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/pets/seventh-dog-1440-1x.avif 1x,
+                  ./img/pets/seventh-dog-1440-2x.avif 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/pets/seventh-dog-414-1x.webp 1x,
+                  ./img/pets/seventh-dog-414-2x.webp 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/pets/seventh-dog-1440-1x.webp 1x,
+                  ./img/pets/seventh-dog-1440-2x.webp 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/pets/seventh-dog-414-1x.jpg 1x,
+                  ./img/pets/seventh-dog-414-2x.jpg 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/pets/seventh-dog-1440-1x.jpg 1x,
+                  ./img/pets/seventh-dog-1440-2x.jpg 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <img class="pets-list-item-img" src="" alt="dog" />
+            </picture>
+            <div class="pets-list-item-content">
+              <h4 class="pets-list-item-title">MO231 - Pomeranian White</h4>
+              <ul class="pets-list-item-list">
+                <li class="pets-list-item-list-item">
+                  <h5 class="pets-list-item-list-item-title">Gene:</h5>
+                  <p class="pets-list-item-list-item-text">Female</p>
+                </li>
+                <svg class="pets-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#point"></use>
+                </svg>
+                <li class="pets-list-item-list-item">
+                  <h5 class="pets-list-item-list-item-title">Age:</h5>
+                  <p class="pets-list-item-list-item-text">02 months</p>
+                </li>
+              </ul>
+              <p class="pets-list-item-text">6.500.000 VND</p>
+            </div>
+          </div>
+        </li>
+        <li class="pets-list-item">
+          <div class="pets-list-item-container">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/pets/eighteenth-dog-414-1x.avif 1x,
+                  ./img/pets/eighteenth-dog-414-2x.avif 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/pets/eighteenth-dog-1440-1x.avif 1x,
+                  ./img/pets/eighteenth-dog-1440-2x.avif 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/pets/eighteenth-dog-414-1x.webp 1x,
+                  ./img/pets/eighteenth-dog-414-2x.webp 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/pets/eighteenth-dog-1440-1x.webp 1x,
+                  ./img/pets/eighteenth-dog-1440-2x.webp 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/pets/eighteenth-dog-414-1x.jpg 1x,
+                  ./img/pets/eighteenth-dog-414-2x.jpg 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/pets/eighteenth-dog-1440-1x.jpg 1x,
+                  ./img/pets/eighteenth-dog-1440-2x.jpg 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <img class="pets-list-item-img" src="" alt="dog" />
+            </picture>
+            <div class="pets-list-item-content">
+              <h4 class="pets-list-item-title">
+                MO512 - Poodle Tiny Dairy Cow
+              </h4>
+              <ul class="pets-list-item-list">
+                <li class="pets-list-item-list-item">
+                  <h5 class="pets-list-item-list-item-title">Gene:</h5>
+                  <p class="pets-list-item-list-item-text">Male</p>
+                </li>
+                <svg class="pets-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#point"></use>
+                </svg>
+                <li class="pets-list-item-list-item">
+                  <h5 class="pets-list-item-list-item-title">Age:</h5>
+                  <p class="pets-list-item-list-item-text">02 months</p>
+                </li>
+              </ul>
+              <p class="pets-list-item-text">5.000.000 VND</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
   <section>
-    <div class="image-container">
-      <img src="./image.jpg" alt="Pomeranian running">
-      <div class="hover-text">Learn more about Pomeranians</div>
-    </div>
-    <div class="card-content">
-        <button>Pet knowledge</button>
-      <div class="card-title">What is a Pomeranian? How to Identify Pomeranian Dogs</div>
-      <div class="card-text">
-        The Pomeranian is a small, smart, and energetic dog breed. Learn how to identify it and take care of its fluffy coat and cheerful nature.
+    <h1>One more friend</h1>
+    <h2>Thousands more fun!</h2>
+    <p>Having a pet means you have more joy, a new friend, a happy person who will always be with you to have fun. We have 200+ different pets that can meet your needs!</p>
+   <div> <button> View Intro >
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M10 9V15L15 12L10 9Z" fill="#003459" stroke="#003459" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+   </button>Explore Now</button>
+  </div>
+  </section>
+  <section id="products" class="products">
+    <div class="contaiener-products">
+      <div class="products-wrapper">
+        <div>
+          <h4 class="products-title">
+            Hard to choose right products for your pets?
+          </h4>
+          <h3 class="products-main-title">Our Products</h3>
+        </div>
+        <button class="products-btn">
+          View more
+          <svg class="products-btn-svg">
+            <use xlink:href="./img/symbol-defs.svg#arrow-right"></use>
+          </svg>
+        </button>
       </div>
-    </div>
-</section>
-
-    <section>
-    <div class="image-container">
-      <img src="./image1.jpg" alt="Dog with food">
-      <div class="hover-text">Healthy meals for happy dogs</div>
-    </div>
-    <div class="card-content">
-        <button>Pet knowledge</button>
-      <div class="card-title">Dog Diet You Need To Know</div>
-      <div class="card-text">
-        Feeding your dog correctly is crucial. Discover tips on how to build a balanced diet for your pet, especially for new dog owners.
-      </div>
-    </div>
-</section>
-  
-
-
-     <section>
-    <div class="image-container">
-      <img src="./image2.jpg" alt="Dogs on furniture">
-      <div class="hover-text">Training tips to protect your furniture</div>
-    
-     
-        <div class="card">
-            <div class="image-container">
-            
+      <ul class="products-list">
+        <li class="products-list-item">
+          <div class="products-list-item-container">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/products/products1-414-1x.avif 1x,
+                  ./img/products/products1-414-2x.avif 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/products/products1-1440-1x.avif 1x,
+                  ./img/products/products1-1440-2x.avif 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/products/products1-414-1x.webp 1x,
+                  ./img/products/products1-414-2x.webp 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/products/products1-1440-1x.webp 1x,
+                  ./img/products/products1-1440-2x.webp 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/products/products1-414-1x.jpg 1x,
+                  ./img/products/products1-414-2x.jpg 2x
+                "
+                media="(min-width: 413px) and (max-width: 1439px)"
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/products/products1-1440-1x.jpg 1x,
+                  ./img/products/products1-1440-2x.jpg 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <img class="products-list-item-img" src="" alt="dog" />
+            </picture>
+            <div class="products-list-item-content">
+              <h4 class="products-list-item-title">
+                MO231 - Pomeranian White
+              </h4>
+              <ul class="products-list-item-list">
+                <li class="products-list-item-list-item">
+                  <h5 class="products-list-item-list-item-title">Gene:</h5>
+                  <p class="products-list-item-list-item-text">Male</p>
+                </li>
+                <svg class="products-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#point"></use>
+                </svg>
+                <li class="products-list-item-list-item">
+                  <h5 class="products-list-item-list-item-title">Age:</h5>
+                  <p class="products-list-item-list-item-text">02 months</p>
+                </li>
+              </ul>
+              <p class="products-list-item-text">6.900.000 VND</p>
+              <button class="products-list-item-btn">
+                <svg class="products-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#present"></use>
+                </svg>
+                <svg class="products-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#point"></use>
+                </svg>
+                Free Toy & Free Shaker
+              </button>
             </div>
-            <div class="card-content">
-             <button>Pet knowledge</button>
-              <div class="card-title">Why Dogs Bite and Destroy Furniture and How to Prevent It Effectively</div>
-              <div class="card-text">
-                Dog bites are common during development. However, no one wants to see their furniture or important items being bitten by a dog.
+          </div>
+        </li>
+        <li class="products-list-item">
+          <div class="products-list-item-container">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/products/products2-1440-1x.avif 1x,
+                  ./img/products/products2-1440-2x.avif 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/products/products2-1440-1x.webp 1x,
+                  ./img/products/products2-1440-2x.webp 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/products/products2-1440-1x.jpg 1x,
+                  ./img/products/products2-1440-2x.jpg 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <img class="products-list-item-img" src="" alt="dog" />
+            </picture>
+            <div class="products-list-item-content">
+              <h4 class="products-list-item-title">
+                MO231 - Pomeranian White
+              </h4>
+              <ul class="products-list-item-list">
+                <li class="products-list-item-list-item">
+                  <h5 class="products-list-item-list-item-title">Gene:</h5>
+                  <p class="products-list-item-list-item-text">Male</p>
+                </li>
+                <svg class="products-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#point"></use>
+                </svg>
+                <li class="products-list-item-list-item">
+                  <h5 class="products-list-item-list-item-title">Age:</h5>
+                  <p class="products-list-item-list-item-text">02 months</p>
+                </li>
+              </ul>
+              <p class="products-list-item-text">6.900.000 VND</p>
+              <button class="products-list-item-btn">
+                <svg class="products-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#present"></use>
+                </svg>
+                <svg class="products-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#point"></use>
+                </svg>
+                Free Toy & Free Shaker
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="products-list-item">
+          <div class="products-list-item-container">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/products/products3-1440-1x.avif 1x,
+                  ./img/products/products3-1440-2x.avif 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/products/products3-1440-1x.webp 1x,
+                  ./img/products/products3-1440-2x.webp 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/products/products3-1440-1x.jpg 1x,
+                  ./img/products/products3-1440-2x.jpg 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <img class="products-list-item-img" src="" alt="dog" />
+            </picture>
+            <div class="products-list-item-content">
+              <h4 class="products-list-item-title">
+                MO231 - Pomeranian White
+              </h4>
+              <ul class="products-list-item-list">
+                <li class="products-list-item-list-item">
+                  <h5 class="products-list-item-list-item-title">Gene:</h5>
+                  <p class="products-list-item-list-item-text">Male</p>
+                </li>
+                <svg class="products-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#point"></use>
+                </svg>
+                <li class="products-list-item-list-item">
+                  <h5 class="products-list-item-list-item-title">Age:</h5>
+                  <p class="products-list-item-list-item-text">02 months</p>
+                </li>
+              </ul>
+              <p class="products-list-item-text">6.900.000 VND</p>
+              <button class="products-list-item-btn">
+                <svg class="products-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#present"></use>
+                </svg>
+                <svg class="products-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#point"></use>
+                </svg>
+                Free Toy & Free Shaker
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="products-list-item">
+          <div class="products-list-item-container">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/products/products4-1440-1x.avif 1x,
+                  ./img/products/products4-1440-2x.avif 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/products/products4-1440-1x.webp 1x,
+                  ./img/products/products4-1440-2x.webp 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/products/products4-1440-1x.jpg 1x,
+                  ./img/products/products4-1440-2x.jpg 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <img class="products-list-item-img" src="" alt="dog" />
+            </picture>
+            <div class="products-list-item-content">
+              <h4 class="products-list-item-title">
+                MO231 - Pomeranian White
+              </h4>
+              <ul class="products-list-item-list">
+                <li class="products-list-item-list-item">
+                  <h5 class="products-list-item-list-item-title">Gene:</h5>
+                  <p class="products-list-item-list-item-text">Male</p>
+                </li>
+                <svg class="products-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#point"></use>
+                </svg>
+                <li class="products-list-item-list-item">
+                  <h5 class="products-list-item-list-item-title">Age:</h5>
+                  <p class="products-list-item-list-item-text">02 months</p>
+                </li>
+              </ul>
+              <p class="products-list-item-text">6.900.000 VND</p>
+              <button class="products-list-item-btn">
+                <svg class="products-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#present"></use>
+                </svg>
+                <svg class="products-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#point"></use>
+                </svg>
+                Free Toy & Free Shaker
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="products-list-item">
+          <div class="products-list-item-container">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/products/products5-1440-1x.avif 1x,
+                  ./img/products/products5-1440-2x.avif 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/products/products5-1440-1x.webp 1x,
+                  ./img/products/products5-1440-2x.webp 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/products/products5-1440-1x.jpg 1x,
+                  ./img/products/products5-1440-2x.jpg 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <img class="products-list-item-img" src="" alt="dog" />
+            </picture>
+            <div class="products-list-item-content">
+              <h4 class="products-list-item-title">
+                MO231 - Pomeranian White
+              </h4>
+              <ul class="products-list-item-list">
+                <li class="products-list-item-list-item">
+                  <h5 class="products-list-item-list-item-title">Gene:</h5>
+                  <p class="products-list-item-list-item-text">Male</p>
+                </li>
+                <svg class="products-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#point"></use>
+                </svg>
+                <li class="products-list-item-list-item">
+                  <h5 class="products-list-item-list-item-title">Age:</h5>
+                  <p class="products-list-item-list-item-text">02 months</p>
+                </li>
+              </ul>
+              <p class="products-list-item-text">6.900.000 VND</p>
+              <button class="products-list-item-btn">
+                <svg class="products-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#present"></use>
+                </svg>
+                <svg class="products-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#point"></use>
+                </svg>
+                Free Toy & Free Shaker
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="products-list-item">
+          <div class="products-list-item-container">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/products/products6-1440-1x.avif 1x,
+                  ./img/products/products6-1440-2x.avif 2x
+                "
+                media="(min-width: 1439px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/products/products6-1440-1x.webp 1x,
+                  ./img/products/products6-1440-2x.webp 2x
+                "
+                media="(min-width: 1439px)"
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/products/products6-1440-1x.jpg 1x,
+                  ./img/products/products6-1440-2x.jpg 2x
+                "
+                media="(min-width: 1439px)"
+              />
+              <img class="products-list-item-img" src="" alt="dog" />
+            </picture>
+            <div class="products-list-item-content">
+              <h4 class="products-list-item-title">
+                MO231 - Pomeranian White
+              </h4>
+              <ul class="products-list-item-list">
+                <li class="products-list-item-list-item">
+                  <h5 class="products-list-item-list-item-title">Gene:</h5>
+                  <p class="products-list-item-list-item-text">Male</p>
+                </li>
+                <svg class="products-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#point"></use>
+                </svg>
+                <li class="products-list-item-list-item">
+                  <h5 class="products-list-item-list-item-title">Age:</h5>
+                  <p class="products-list-item-list-item-text">02 months</p>
+                </li>
+              </ul>
+              <p class="products-list-item-text">6.900.000 VND</p>
+              <button class="products-list-item-btn">
+                <svg class="products-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#present"></use>
+                </svg>
+                <svg class="products-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#point"></use>
+                </svg>
+                Free Toy & Free Shaker
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="products-list-item">
+          <div class="products-list-item-container">
+            <picture>
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/products/products7-1440-1x.jpg 1x,
+                  ./img/products/products7-1440-2x.jpg 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/products/products7-1440-1x.webp 1x,
+                  ./img/products/products7-1440-2x.webp 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/products/products7-1440-1x.avif 1x,
+                  ./img/products/products7-1440-2x.avif 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <img class="products-list-item-img" src="" alt="dog" />
+            </picture>
+            <div class="products-list-item-content">
+              <h4 class="products-list-item-title">
+                MO231 - Pomeranian White
+              </h4>
+              <ul class="products-list-item-list">
+                <li class="products-list-item-list-item">
+                  <h5 class="products-list-item-list-item-title">Gene:</h5>
+                  <p class="products-list-item-list-item-text">Male</p>
+                </li>
+                <svg class="products-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#point"></use>
+                </svg>
+                <li class="products-list-item-list-item">
+                  <h5 class="products-list-item-list-item-title">Age:</h5>
+                  <p class="products-list-item-list-item-text">02 months</p>
+                </li>
+              </ul>
+              <p class="products-list-item-text">6.900.000 VND</p>
+              <button class="products-list-item-btn">
+                <svg class="products-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#present"></use>
+                </svg>
+                <svg class="products-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#point"></use>
+                </svg>
+                Free Toy & Free Shaker
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="products-list-item">
+          <div class="products-list-item-container">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  ./img/products/products8-1440-1x.avif 1x,
+                  ./img/products/products8-1440-2x.avif 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/products/products8-1440-1x.webp 1x,
+                  ./img/products/products8-1440-2x.webp 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ./img/products/products8-1440-1x.jpg 1x,
+                  ./img/products/products8-1440-2x.jpg 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <img class="products-list-item-img" src="" alt="dog" />
+            </picture>
+            <div class="products-list-item-content">
+              <h4 class="products-list-item-title">
+                MO231 - Pomeranian White
+              </h4>
+              <ul class="products-list-item-list">
+                <li class="products-list-item-list-item">
+                  <h5 class="products-list-item-list-item-title">Gene:</h5>
+                  <p class="products-list-item-list-item-text">Male</p>
+                </li>
+                <svg class="products-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#point"></use>
+                </svg>
+                <li class="products-list-item-list-item">
+                  <h5 class="products-list-item-list-item-title">Age:</h5>
+                  <p class="products-list-item-list-item-text">02 months</p>
+                </li>
+              </ul>
+              <p class="products-list-item-text">6.900.000 VND</p>
+              <button class="products-list-item-btn">
+                <svg class="products-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#present"></use>
+                </svg>
+                <svg class="products-list-item-list-svg">
+                  <use xlink:href="./img/symbol-defs.svg#point"></use>
+                </svg>
+                Free Toy & Free Shaker
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <main>
+
+    <div class="main-container">
+        <div class="main-container-text">
+            <p class="main-container-text-normal">Proud to be part of</p>
+<h4 class="main-container-text-bold">Pet Sellers</h4>
+<button class="main-container-text-btn">View all our sellers
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M8.33337 6.66675L11.6667 10.0001L8.33337 13.3334" stroke="#003459" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+</button>
+</div>
+ <div class="main-container-image">   
+<img src="./image1.jpg" alt="">
+<img src="./image2.jpg" alt="">
+<img src="./image3.jpg" alt="">
+<img src="./image4.jpg" alt="">
+<img src="./image5.jpg" alt="">
+<img src="./image6.jpg" alt="">
+<img src="./image7.jpg" alt="">
+</div>
+</div>
+</main>
+  <main>
+    <section class="hero">
+        <div class="container">
+            <div class="card">
+                <h1 class="card-h1">Adoption 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="38" viewBox="0 0 42 38" fill="none">
+                        <path d="M22.3146 8.51235V8.56143C22.3139 9.5215 22.4822 10.4745 22.8121 11.3785L22.7927 11.3199C23.1133 12.2007 23.6581 12.9867 24.3754 13.6032L24.3818 13.608C25.0618 14.2081 25.9662 14.5739 26.9578 14.5739H27.0353H27.0321C28.3403 14.5666 29.5932 14.0553 30.5205 13.1504C31.5335 12.2387 32.3216 11.1129 32.8251 9.85831L32.8461 9.79813C33.3341 8.61246 33.5911 7.34756 33.6036 6.06903V6.01361C33.6036 5.02552 33.4275 4.07701 33.1061 3.19659L33.1255 3.25518C32.8049 2.37433 32.2601 1.58836 31.5428 0.971801L31.5363 0.96705C30.8065 0.323216 29.853 -0.0223897 28.8716 0.00112587H28.8764C27.5678 0.00661014 26.3142 0.518173 25.388 1.42468C24.3851 2.33632 23.6036 3.45697 23.1011 4.70407L23.0801 4.76424C22.6134 5.87268 22.3372 7.16005 22.3227 8.5076V8.51235H22.3146ZM30.9469 20.4645L30.9452 20.5975C30.9433 21.7882 31.3186 22.9502 32.0192 23.9228L32.0063 23.9038C32.3258 24.3551 32.7519 24.7238 33.2483 24.9786C33.7447 25.2334 34.2965 25.3666 34.8568 25.3669L35.0167 25.3638H35.0086C36.3324 25.3495 37.6047 24.8593 38.5843 23.9861L38.5794 23.9909C39.6215 23.1158 40.4643 22.0357 41.0533 20.8207C41.6423 19.6057 41.9643 18.2829 41.9984 16.9381V16.9254L42 16.7955C42 15.5525 41.6027 14.3997 40.926 13.4544L40.9389 13.4734C40.6065 12.997 40.1556 12.6116 39.6287 12.3539C39.1019 12.0962 38.5167 11.9746 37.9286 12.0008H37.9366C36.6129 12.015 35.3405 12.5053 34.361 13.3784L34.3658 13.3736C33.3222 14.2539 32.4786 15.3392 31.8897 16.5593C31.3007 17.7794 30.9795 19.1071 30.9469 20.4566V20.4676V20.4645ZM20.9968 19.7962C18.6389 19.9224 16.3807 20.7703 14.54 22.2206L14.5626 22.2031C12.3094 23.7721 10.368 25.732 8.83413 27.986L8.78245 28.0668C7.39997 29.8879 6.59202 32.0662 6.45845 34.3326L6.45684 34.3643L6.45361 34.502C6.45361 35.1418 6.61349 35.7467 6.89612 36.2771L6.88643 36.2565C7.1576 36.743 7.58112 37.131 8.09446 37.3634L8.11061 37.3697C8.58058 37.5898 9.12806 37.7624 9.69978 37.859L9.73854 37.8638C10.3347 37.956 10.9374 38.0015 11.5409 38H11.662H11.6556C13.3196 37.892 14.9521 37.503 16.4812 36.8504L16.3875 36.8868C17.8316 36.2694 19.3711 35.8942 20.9419 35.7768L20.9919 35.7736C22.7733 35.9034 24.4238 36.2961 25.9581 36.9121L25.8499 36.8741C27.4497 37.5041 29.1433 37.8753 30.8645 37.973L30.9097 37.9746C33.9955 37.9767 35.5383 36.7738 35.5383 34.3659C35.4684 32.6786 34.9735 31.0346 34.0978 29.5806L34.1252 29.6281C33.1804 27.8858 31.9933 26.2807 30.598 24.8586L30.6045 24.865C29.2407 23.4684 27.6811 22.2693 25.9726 21.3037L25.8725 21.2515C24.4133 20.3588 22.7413 19.856 21.0226 19.7931H21.0032L20.9968 19.7962ZM14.9647 14.5755H15.039C15.9914 14.5765 16.9104 14.2312 17.6182 13.6064L17.6149 13.6096C18.3265 13.0021 18.8689 12.2273 19.1912 11.3579L19.2041 11.3199C19.5245 10.4343 19.6868 9.50111 19.6838 8.56143V8.50918V8.51235C19.6692 7.15847 19.3931 5.87268 18.9005 4.69457L18.9263 4.76424C18.4259 3.49609 17.6385 2.35584 16.6233 1.42943L16.6169 1.42468C15.6904 0.519718 14.4378 0.008873 13.1301 0.00270936H13.0542C12.0625 0.00270936 11.1581 0.370077 10.475 0.971801L10.4782 0.968634C9.77084 1.57511 9.22496 2.34468 8.90196 3.22035L8.88904 3.25835C8.58057 4.08493 8.40292 5.03977 8.40292 6.0342V6.06587V6.06428C8.41691 7.36974 8.68267 8.66081 9.1862 9.86939L9.16037 9.79972C9.66119 11.0748 10.4547 12.2197 11.4795 13.1456L11.486 13.152C12.4137 14.0546 13.6658 14.5641 14.9728 14.5708H14.9744L14.9647 14.5755ZM4.06339 12.0039L3.91481 12.0008C2.73423 12.0008 1.69255 12.5803 1.06916 13.4655L1.06108 13.4766C0.36726 14.4512 -0.00325012 15.6118 1.90735e-05 16.8003L0.00163651 16.9365V16.9301C0.0334435 18.2741 0.353107 19.5966 0.939892 20.8116C1.52668 22.0267 2.36747 23.1071 3.4077 23.983L3.42061 23.9941C4.39863 24.8639 5.6678 25.3523 6.98817 25.3669H6.99141C7.57462 25.3926 8.15499 25.2733 8.67851 25.0199C9.20203 24.7666 9.65169 24.3876 9.98563 23.9181L9.99371 23.907C10.7152 22.8998 11.0867 21.6916 11.0532 20.4613V20.4676C11.0222 19.1189 10.7031 17.7915 10.1164 16.5712C9.52974 15.3509 8.68852 14.2648 7.6471 13.3831L7.63418 13.3721C6.65726 12.5049 5.39077 12.0178 4.07308 12.0023H4.06985L4.06339 12.0039Z" fill="#003459"/>
+                      </svg>
+                </h1>
+                <h2 class="card-h2">We need help. so do they.</h2>
+                <p class="card-p">Adopt a pet and give it a home,
+                    it will be love you back unconditionally.</p>
+                    <div class="button-group">
+                        <button class="btn dark">Explore Now</button>
+                        <button class="btn light">View Intro 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M10 9V15L15 12L10 9Z" fill="#003459" stroke="#003459" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <main>
+            <div>
+              <p>You already know ?</p>
+              <h2>Useful pet knowledge</h2>
+      
+              <button class="view-more-btn">View more ></button>
+              
+      
+            <section>
+              <div class="image-container">
+                <div class="hover-text">Learn more about Pomeranians</div>
               </div>
-            </div>
-        </section>
-</body>
-</html>
+              <picture>
+                <source type="image/webp">
+                <source media="(min-width: 1280px)" srcset="./image1x.webp,./image2x.webp">
+                <source type="image/avif">
+                  <source media="(min-width: 1024px)" srcset="./image1x.avif,./image2x.avif">
+              </picture>
+              <div class="card-content">
+                  <button>Pet knowledge</button>
+                <div class="card-title">What is a Pomeranian? How to Identify Pomeranian Dogs</div>
+                <div class="card-text">
+                  The Pomeranian is a small, smart, and energetic dog breed. Learn how to identify it and take care of its fluffy coat and cheerful nature.
+                </div>
+              </div>
+          </section>
+          
+              <section>                 
+              <div class="image-container">
+                <picture>
+                  <sourcen type="image/webp">
+                  <source media="(min-width: 1280px)" srcset="./imageee1x.webp,./imageee2x.webp">
+                  <source type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="./imageee1x.avif,./imageee2x.avif">
+                </picture>
+                <div class="hover-text">Healthy meals for happy dogs</div>
+              </div>
+              <div class="card-content">
+                  <button>Pet knowledge</button>
+                <div class="card-title">Dog Diet You Need To Know</div>
+                <div class="card-text">
+                  Feeding your dog correctly is crucial. Discover tips on how to build a balanced diet for your pet, especially for new dog owners.
+                </div>
+              </div>
+          </section>
+             <section>
+              <div class="image-container">
+                <picture>
+                  <source type="image/webp">
+                  <source media="(min-width: 1280px)" srcset="./image1xx.webp,./image2xx.webp">
+                  <source type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="./image1xx.avif,./image2xx.avif">
+                </picture>
+              
+                <div class="hover-text">Training tips to protect your furniture</div>
+                 <div class="card">
+                      <div class="image-container">
+                      </div>
+                      <div class="card-content">
+                       <button>Pet knowledge</button>
+                        <div class="card-title">Why Dogs Bite and Destroy Furniture and How to Prevent It Effectively</div>
+                        <div class="card-text">
+                          Dog bites are common during development. However, no one wants to see their furniture or important items being bitten by a dog.</div>
+                      </div>
+                  </section>
+          </main>
+    
+              <script src="./index.js"></script>
+            <footer class="footer">
+                <div class="footer-top">
+                  <p class="newsletter-text">Register Now So You Don’t Miss Our Programs</p>
+                  <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your Email" required />
+                    <button type="submit">Subscribe Now</button>
+                  </form>
+                </div>
+            
+                <div class="footer-middle">
+                  <nav class="footer-nav">
+                    <a href="#">Home</a>
+                    <a href="#">Category</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                  </nav>
+                  <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+            
+                <div class="footer-bottom">
+                  <p>© 2022 Monito. All rights reserved.</p>
+                  <a href="/" class="footer-logo" aria-label="Home">
+                    <svg width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <text x="0" y="20" font-size="20" fill="#002244" font-family="sans-serif">Monitö</text>
+                    </svg>
+                  </a>
+                  <div class="footer-links">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                  </div>
+                </div>
+              </footer>
+            
+
+    </body>
+  </html>
+  
