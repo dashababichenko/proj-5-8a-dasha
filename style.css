@@ -1,128 +1,86 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 10px;
-    background-color: #f9f9f9;
+  font-family: 'Gilroy', sans-serif;
 }
-.view-more-btn {
-  padding: 10px 20px;
-  border: 2px solid #ccc;
-  border-radius: 999px;
-  background-color: white;
-  color: #333;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+.hero{
+
+    
 }
-
-.view-more-btn:hover {
-  border-color: #999;
-  background-color: #f5f5f5;
+.card{
+    background-color: #FFB775;
+    background-image: url(./pngegg1.png), url( ./adopt.png);
+    background-size: auto,cover;
+    background-repeat: no-repeat;
+    background-position: right 35px top 0,center;
+    width:  1180px;
+height: 378px;
+    
 }
+.card-h1 {
+  color: #003459;
+  font-family: SVN-Gilroy;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 68px; 
+  text-transform: capitalize;
+}
+.card-h2 {
 
+}
+.card-p {
 
-  .section-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #003366; 
-    text-align: center;
-  }
-
-  .card {
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-
-   .container {
+}
+.button-group {
     display: flex;
-
-   } 
-   .image-container {
-    position: relative;
+    gap: 1rem;
   }
-
-  .image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-    filter: brightness(90%);
+  
+  .btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
   }
-
-  .hover-text {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 6px 12px;
-    border-radius: 5px;
-    font-size: 14px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  
+  .btn.dark {
+    background-color: #1e1e2f; 
+    color: white;
+    border: none;
   }
-
-  .image-container:hover .hover-text {
-    opacity: 1;
+  
+  .btn.light {
+    background-color: transparent;
+    color: #1e1e2f;
+    border: 2px solid #1e1e2f;
   }
+  
+.card {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
 
-  .card-content {
-    padding: 15px;
-  }
+.card.active {
+  transform: scale(1.05); 
+  z-index: 10;
+}
 
-  .tag-button {
-    display: inline-block;
-    background-color: #00b0d8;
-    color: #fff;
-    font-size: 13px;
-    font-weight: bold;
-    padding: 6px 14px;
-    border-radius: 25px;
-    margin-bottom: 10px;
-    text-decoration: none;
-  }
+.card.active .overlay-text {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); 
+  color: white;
+  width: 100%;
+  padding: 10px;
+  display: block;
+}
 
-  .card-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 10px 0;
-    color: #222;
-  }
+.overlay-text {
+  display: none;
+}
 
-  .card-text {
-    font-size: 14px;
-    color: #555;
-    line-height: 1.5;
-  }
-
-  @media (min-width: 1440px) {
-    .section-title {
-      font-size: 28px;
-    }
-
-    .card {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-    }
-
-    .image-container,
-    .card-content {
-      width: 50%;
-    }
-
-    .card-content {
-      padding: 25px;
-    }
-
-    .card-title {
-      font-size: 20px;
-    }
-
-    .card-text {
-      font-size: 16px;
-    }
-  }
+.card-container .card.active ~ .card {
+  z-index: 1;
+}
