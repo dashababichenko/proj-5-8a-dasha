@@ -1,86 +1,241 @@
-body {
-  font-family: 'Gilroy', sans-serif;
+.card-container {
+  width: 1440px;
+  height: 4884px;
 }
-.hero{
 
-    
+body {
+  font-family: "Gilroy", sans-serif;
 }
-.card{
-    background-color: #FFB775;
-    background-image: url(./pngegg1.png), url( ./adopt.png);
-    background-size: auto,cover;
-    background-repeat: no-repeat;
-    background-position: right 35px top 0,center;
-    width:  1180px;
-height: 378px;
-    
+.hero {
+
+}
+.petsellers-container {
+  display: flex;
+  width: 1438px;
+  padding: 40px 130px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.card {
+  border-radius: 20px;
+  background-color: #ffb775;
+  background-image: url(./pngegg1.png), url(./Group.png);
+  background-size: auto, cover;
+  background-repeat: no-repeat;
+  background-position: right 35px top 0, center;
+  width: 1180px;
+  height: 378px;
+
+}
+.text > span {
+  display: block;
+}
+.modal-open {
+  overflow: hidden;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  position: relative;
+  background: white;
+  padding: 1rem;
+  max-width: 80%;
+  border-radius: 8px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: red;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 .card-h1 {
   color: #003459;
-  font-family: SVN-Gilroy;
   font-size: 52px;
   font-style: normal;
   font-weight: 800;
-  line-height: 68px; 
+  line-height: 68px;
   text-transform: capitalize;
 }
-.card-h2 {
 
+.card1 {
 }
-.card-p {
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.knowledge {
+  display: flex;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.list.item {
+  width: 24%;
+  height: 100px;
+  border: 1px;
+}
+.card-container{
+  overflow: hidden;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
 
+.footer {
+  background: #fdf1dc;
+  padding: 2rem 1rem;
+  color: #000;
 }
-.button-group {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .btn {
-    padding: 12px 24px;
-    font-size: 16px;
-    border-radius: 30px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .btn.dark {
-    background-color: #1e1e2f; 
-    color: white;
-    border: none;
-  }
-  
-  .btn.light {
-    background-color: transparent;
-    color: #1e1e2f;
-    border: 2px solid #1e1e2f;
-  }
-  
-.card {
-  position: relative;
+
+.footer-top {
+  background: #002244;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.newsletter-text {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input {
+  padding: 0.6rem;
+  width: 280px;
+  border: none;
+  border-radius: 6px;
+}
+
+.newsletter-form button {
+  background: white;
+  color: #002244;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
   cursor: pointer;
+}
+
+.footer-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 1rem;
+  font-size: 0.95rem;
+  transition: 0.2s ease;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  color: #000;
+  font-size: 1.2rem;
   transition: transform 0.3s ease;
 }
 
-.card.active {
-  transform: scale(1.05); 
-  z-index: 10;
+.social-icon:hover {
+  transform: scale(1.3);
 }
 
-.card.active .overlay-text {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6); 
-  color: white;
-  width: 100%;
-  padding: 10px;
-  display: block;
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  margin-top: 1rem;
 }
 
-.overlay-text {
-  display: none;
+.footer-logo svg {
+  cursor: pointer;
 }
 
-.card-container .card.active ~ .card {
-  z-index: 1;
+.footer-links a {
+  margin-left: 1.2rem;
+  text-decoration: none;
+  color: #000;
+  transition: 0.2s ease;
 }
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .footer-middle,
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    margin-top: 0.5rem;
+  }
+}
+/* 
+overflow: hidden;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+*/
