@@ -1,14 +1,99 @@
-const videobtn = document.querySelector(".universal__btn");
-videobtn.addEventListener("click", function() {
-    window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=0gcJCdgAo7VqN5tD";
+  const openBtn = document.querySelector('.header-modal-open');
+  const closeBtn = document.getElementById('modalClose');
+  const backdrop = document.getElementById('modalBackdrop');
+  const body = document.body;
 
-})
-const openbtn = document.querySelector(".headefr-modal-open");
-const closebtn = document.querySelector(".header-modal-close");
-const modal = document.querySelector(".header-modal");
-openbtn.addEventListener("click", () => {
-    modal.claasList.add("active");
+  openBtn.addEventListener('click', () => {
+    body.classList.add('modal-open');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    body.classList.remove('modal-open');
+  });
+
+  backdrop.addEventListener('click', () => {
+    body.classList.remove('modal-open');
+  });
+  document.querySelectorAll('.universal__btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const link = button.getAttribute('data-link');
+        if (link) {
+            window.open(link, '_blank'); 
+        }
+    });
 });
-closebtn.addEventListener("click", () => {
-    modal.classList.remove('active')
+  const items = document.querySelectorAll('.products-list-item-container');
+  const cart = document.getElementById('cart');
+  const cartCount = document.getElementById('cart-count');
+  const cartTotal = document.getElementById('cart-total');
+
+  let selectedItems = [];
+
+  items.forEach(item => {
+    item.addEventListener('click', () => {
+      const price = parseFloat(item.dataset.price);
+
+      if (item.classList.contains('selected')) {
+        item.classList.remove('selected');
+        selectedItems = selectedItems.filter(p => p !== price);
+      } else {
+        item.classList.add('selected');
+        selectedItems.push(price);
+      }
+
+      
+      cartCount.textContent = selectedItems.length;
+      cartTotal.textContent = selectedItems.reduce((a, b) => a + b, 0).toFixed(2);
+
+      
+      if (selectedItems.length > 0) {
+        cart.classList.add('cart--visible');
+      } else {
+        cart.classList.remove('cart--visible');
+      }
+    });
+  });
+  const elcard1 = document.querySelector('.petknowledge-container-petslist-item:nth-child(1)')
+   const elcard2 = document.querySelector('.petknowledge-container-petslist-item:nth-child(2)')
+    const elcard3 = document.querySelector('.petknowledge-container-petslist-item:nth-child(3)')
+
+console.log(elcard1);
+console.log(elcard2);
+console.log(elcard3);
+
+let activecard = null;
+
+elcard1.addEventListener('click',()=> {
+  if (activecard) {
+    console.log("activecard",activecard);
+    activecard.classList.remove('active');
+  }
+  if (activecard !== elcard1) {
+    elcard1.classList.add("active");
+    activecard = elcard1;
+  } else {
+     activecard = null
+  }
 })
+elcard2.addEventListener('click',()=> {
+if (activecard) {
+    console.log("activecard",activecard);
+    activecard.classList.remove('active');
+  }
+  if (activecard !== elcard2) {
+    elcard2.classList.add("active");
+    activecard = elcard2;
+  } else {
+     activecard = null
+  }})
+elcard3.addEventListener('click',()=> {
+if (activecard) {
+    console.log("activecard",activecard);
+    activecard.classList.remove('active');
+  }
+  if (activecard !== elcard3) {
+    elcard3.classList.add("active");
+    activecard = elcard3;
+  } else {
+     activecard = null
+  }})
