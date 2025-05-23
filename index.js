@@ -23,7 +23,6 @@
       const url = button.getAttribute('data-link');
       iframe.src = url.replace('watch?v=', 'embed/');
       modal.style.display = 'flex';
-      document.body.classList.add('modal-open');
     });
   });
 

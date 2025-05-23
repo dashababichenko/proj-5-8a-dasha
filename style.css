@@ -25,6 +25,16 @@
     gap: 16px;
 
 }
+.video-modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
 
 .universal__btn:first-child {
     display: flex;
@@ -275,6 +285,7 @@ flex-shrink: 0;
     content: url(./img/mobile-hero-rectangle-big.png);
     position: absolute;
     bottom: -4px;
+    display: none;
 }
 
 .hero__decor {
@@ -289,6 +300,7 @@ flex-shrink: 0;
 }
 
 .hero__wrapper {
+  position: relative;
     padding-bottom: 25px;
     z-index: 2;
 }
@@ -822,16 +834,7 @@ align-items: center;
     padding-top: 4px;
     font-size: 46px;
 }
-.video-modal {
-  display: none;
-  position: fixed;
-  z-index: 10000;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  justify-content: center;
-  align-items: center;
-}
+
 
 .video-modal__content {
   background: white;
@@ -856,8 +859,10 @@ body.modal-open {
 }
 
 .hero__container::after {
+  display: block;
     content: url(/img/hero-rectangle-big.png);
     right: 0;
+
 }
 
 .hero__decor::after {
@@ -885,6 +890,7 @@ body.modal-open {
   padding: 60px 130px;
 }
 .pets-wrapper {
+
 justify-content: space-between;
 padding: 28px;
 }
@@ -1053,7 +1059,6 @@ border: 1.5px solid #003459;
   gap: 20px;
 }
 .products-list-item-container {
-  width: 280px;
   display: flex;
 padding: 8px 8px 0px 8px;
 flex-direction: column;
@@ -1383,6 +1388,7 @@ align-self: stretch;
 }
 
 .hero__wrapper {
+
   padding-top: 80px;
 
 }
