@@ -14,14 +14,32 @@
   backdrop.addEventListener('click', () => {
     body.classList.remove('modal-open');
   });
-  document.querySelectorAll('.universal__btn').forEach(button => {
+  
+  const modal = document.getElementById('videoModal');
+  const iframe = document.getElementById('youtubeIframe');
+  const closeBtn1 = document.getElementById('closeModal');
+  document.querySelectorAll('.universal__btn[data-link]').forEach(button => {
     button.addEventListener('click', () => {
-        const link = button.getAttribute('data-link');
-        if (link) {
-            window.open(link, '_blank'); 
-        }
+      const url = button.getAttribute('data-link');
+      iframe.src = url.replace('watch?v=', 'embed/');
+      modal.style.display = 'flex';
+      document.body.classList.add('modal-open');
     });
-});
+  });
+
+  
+  closeBtn.addEventListener('click', closeModal);
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  function closeModal() {
+    modal.style.display = 'none';
+    iframe.src = 'https://www.youtube.com/embed/tgbNymZ7vqY'; 
+    document.body.classList.remove('modal-open');
+  }
+
+
   const items = document.querySelectorAll('.products-list-item-container');
   const cart = document.getElementById('cart');
   const cartCount = document.getElementById('cart-count');
