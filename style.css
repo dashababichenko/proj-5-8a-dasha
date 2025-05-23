@@ -495,8 +495,8 @@ cursor: pointer;
 
 .adoption {
   display: none;
- 
 }
+
 .text > span {
   display: block;
 }
@@ -1487,6 +1487,7 @@ align-self: stretch;
   overflow: hidden;
 }
 
+
 .adoption__container::after {
   position: absolute;
   content: url(/img/adoption-rectangle-top.png);
@@ -1507,7 +1508,9 @@ align-self: stretch;
 }
 
 .adoption__img {
-  z-index: 2;
+  position: relative;
+  z-index: 1;
+
 }
 
 .paw {
