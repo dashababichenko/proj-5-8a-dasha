@@ -282,7 +282,7 @@ flex-shrink: 0;
 }
 
 .hero__container::after {
-    content: url(./img/hero-rectangle-big.png);
+    content: url(./img/mobile-hero-rectangle-big.png);
     position: absolute;
     bottom: -4px;
     display: none;
@@ -293,7 +293,7 @@ flex-shrink: 0;
 }
 
 .hero__decor::after {
-    content: url(./img/hero-rectangles-small.png);
+    content: url(./img/mobile-hero-rectangles-small.png);
     position: absolute;
     top: 46px;
     right: 25px;
