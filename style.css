@@ -275,7 +275,7 @@ flex-shrink: 0;
 }
 
 .hero__container::before {
-    content: url(./img/hero-rectangle-top.png);
+    background-image: url(./img/hero-rectangle-top.png);
     position: absolute;
     top: 0;
     left: 0;
@@ -293,7 +293,7 @@ flex-shrink: 0;
 }
 
 .hero__decor::after {
-    content: url(/img/mobile-hero-rectangles-small.png);
+    content: url(./img/mobile-hero-rectangles-small.png);
     position: absolute;
     top: 46px;
     right: 25px;
@@ -503,6 +503,10 @@ cursor: pointer;
   position: relative;
   z-index: 2;
 }
+.products{
+  display: none;
+
+}
 
 
 .adoption {
@@ -530,7 +534,7 @@ cursor: pointer;
 }
 
 
-.petsellers-container {
+.petsellers  {
   display: none;
 }
 
@@ -1009,6 +1013,7 @@ align-self: stretch;
 }
 .pets-btn2 {
 display: none;
+
 }
 .friend {
   padding-top: 60px;
@@ -1236,6 +1241,9 @@ border-radius: 8px;
 .friend__image {
   bottom: -5px;
   left: 20px;
+}
+.petsellers{
+  
 }
 .petsellers-container-title {
   display: flex;
