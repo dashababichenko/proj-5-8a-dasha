@@ -1473,14 +1473,14 @@ body.modal-open {
 
   .adoption__container::after {
     position: absolute;
-    content: url("./img/adoption-rectangle-top.png");
+    content: url(./img/adoption-rectangle-top.png);
     top: 0;
     left: 0;
   }
 
   .adoption__container::before {
     position: absolute;
-    content: url("./img/adoption-rectangle-bottom.png");
+    content: url(./img/adoption-rectangle-bottom.png);
     bottom: -4px;
     right: 0;
   }
