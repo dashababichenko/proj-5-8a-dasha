@@ -1219,6 +1219,7 @@ body.modal-open {
   }
   .petsellers {
     display: block;
+    padding: 40px 130px 40px 130px;
   }
   .petsellers-container-title {
     display: flex;
