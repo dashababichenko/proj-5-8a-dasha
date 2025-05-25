@@ -524,7 +524,7 @@ body.modal-open {
 }
 
 .petsellers {
-  display: none;
+  display: flex;
 }
 
 .petknowledge {
@@ -885,7 +885,8 @@ body.modal-open {
     gap: 2px;
   }
   .pets-wrapper-text-title {
-  }
+   
+  } 
   .pets-wrapper-text-main-title {
     color: #003459;
     font-size: 24px;
@@ -1217,6 +1218,7 @@ body.modal-open {
     left: 20px;
   }
   .petsellers {
+    display: block;
   }
   .petsellers-container-title {
     display: flex;
