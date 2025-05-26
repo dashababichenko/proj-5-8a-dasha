@@ -328,19 +328,20 @@ body.modal-open {
 }
 .pets-wrapper {
   display: flex;
+  padding: 30px 16px;
   align-items: center;
   gap: 2px;
 }
 .pets-text {
 }
-.pets-text-title {
+.pets-wrapper-text-title {
   color: #000;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 142.857%;
 }
-.pets-text-main-title {
+.pets-wrapper-text-main-title {
   color: #003459;
   font-size: 20px;
   font-style: normal;
@@ -348,11 +349,12 @@ body.modal-open {
   line-height: 1.6;
   text-transform: capitalize;
 }
-.pets-btn {
+.pets-wrapper-btn {
   display: none;
 }
 .pets-btn-svg {
 }
+
 .pets-list {
   display: flex;
   flex-wrap: wrap;
@@ -438,6 +440,7 @@ body.modal-open {
   display: flex;
   width: 382px;
   padding: 14px 28px 10px 28px;
+  margin: 20px 20px;
   justify-content: center;
   align-items: center;
   gap: 8px;
@@ -530,13 +533,13 @@ body.modal-open {
 .petknowledge {
 }
 .petknowledge-container {
-  padding: 60px;
   flex-shrink: 0;
   width: 414px;
 }
 
 .petknowledge-container-title1 {
   display: inline-flex;
+  padding: 40px 16px 20px;
   flex-direction: column;
   align-items: flex-start;
   gap: 2px;
@@ -576,7 +579,7 @@ body.modal-open {
   padding: 2px 10px;
   align-items: flex-start;
   gap: 10px;
-  margin: 20px;
+  margin: 12px;
   border-radius: 28px;
   background: #00a7e7;
   color: #fdfdfd;
@@ -589,6 +592,18 @@ body.modal-open {
 }
 .petknowledge-container-petslist-item-text {
 }
+.petknowledge-container-petslist-item-upper{
+transform: translateY(100%);
+    opacity: 0;
+    transition: transform 300ms, opacity 300ms;
+    z-index: -1;
+}
+.petknowledge-container-petslist-item.active
+    > .petknowledge-container-petslist-item-upper {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 1;
+  }
 .petknowledge-container-btn2:hover {
   color: #667479;
   font-size: 16px;
@@ -605,6 +620,7 @@ body.modal-open {
   background-color: #ccd1d2;
 }
 .petknowledge-container-btn2 {
+  color: #003459;;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -612,14 +628,15 @@ body.modal-open {
   display: flex;
   width: 382px;
   padding: 14px 28px 10px 28px;
+  margin: 16px 20px;
   justify-content: center;
   align-items: center;
   gap: 8px;
   border-radius: 57px;
   border: 1.5px solid #003459;
   cursor: pointer;
-}
-
+  box-sizing: border-box;
+} 
 .footer {
   background: #fdf1dc;
   padding: 2rem 1rem;
@@ -643,7 +660,8 @@ body.modal-open {
 
 .newsletter-form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: center;  
   gap: 0.5rem;
   flex-wrap: wrap;
 }
@@ -666,14 +684,11 @@ body.modal-open {
 }
 
 .footer-middle {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 1rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+align-self: stretch;
 }
 
 .footer-nav a {
@@ -885,7 +900,7 @@ body.modal-open {
     gap: 2px;
   }
   .pets-wrapper-text-title {
-   
+  
   } 
   .pets-wrapper-text-main-title {
     color: #003459;
@@ -1503,10 +1518,16 @@ body.modal-open {
     height: 38px;
   }
 
+
   .adoption__text {
     width: 225px;
     padding: 8px 0 42px;
   }
+   .adoption {
+    position: relative;
+    z-index: 1;
+  }
+
 
   .adoption__wrapper .universal__btn:last-child {
     display: flex;
@@ -1551,16 +1572,16 @@ body.modal-open {
   }
   .petknowledge-container-title-btn {
     color: #003459;
-    font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 142.857%;
+    line-height: 20px;
+    display: flex;
     display: inline-flex;
     padding: 12px 28px;
     justify-content: center;
     align-items: center;
     gap: 8px;
-    border-radius: 57px;
+     border-radius: 57px;
     border: 1.5px solid #003459;
     cursor: pointer;
   }
@@ -1593,11 +1614,27 @@ body.modal-open {
   }
   .footer {
   }
-  .footer-middle,
-  .footer-bottom {
-    flex-direction: column;
-    align-items: center;
-  }
+ .footer-middle{
+ display: flex;
+ align-items: center; 
+ padding: 40px 130px;
+ }
+ .footer-logo{
+  width: 115px;
+height: 40px;
+flex-shrink: 0;
+ }
+ .footer-nav a{
+  gap: 60px;
+ }
+ .footer-social{
+  align-items: center;
+  gap: 40px;
+ }
+ .social-icon{
+  width: 24px;
+  height: 24px;
+ }
 
   .footer-links {
     margin-top: 0.5rem;
