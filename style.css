@@ -524,7 +524,7 @@ body.modal-open {
 }
 
 .petsellers {
-  display: flex;
+  display: none;
 }
 
 .petknowledge {
