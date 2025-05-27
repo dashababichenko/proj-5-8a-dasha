@@ -536,10 +536,12 @@ body.modal-open {
   flex-shrink: 0;
   width: 414px;
 }
+.petknowledge-container-title{
+  margin: 40px 16px 20px;
+}
 
 .petknowledge-container-title1 {
-  display: inline-flex;
-  padding: 40px 16px 20px;
+  display: inline-flex;   
   flex-direction: column;
   align-items: flex-start;
   gap: 2px;
@@ -1552,9 +1554,9 @@ align-self: stretch;
     display: flex;
   }
   .petknowledge-container-title {
-    width: 1440px;
+    width: 1159px;
     justify-content: space-between;
-    display: flex;
+    display: inline-flex;
   }
   .petknowledge-container-petslist-item {
     width: 380px;
@@ -1575,7 +1577,6 @@ align-self: stretch;
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
-    display: flex;
     display: inline-flex;
     padding: 12px 28px;
     justify-content: center;
@@ -1614,8 +1615,11 @@ align-self: stretch;
   }
   .footer {
   }
+  
  .footer-middle{
  display: flex;
+ flex-direction: row;
+ justify-content: space-between;
  align-items: center; 
  padding: 40px 130px;
  }
