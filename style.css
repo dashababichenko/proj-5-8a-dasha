@@ -321,10 +321,9 @@ body.modal-open {
 
 .pets {
 }
-.pets-container {
+.pets-pets {
   flex-wrap: wrap;
   gap: 12px;
-  width: 414px;
 }
 .pets-wrapper {
   display: flex;
@@ -358,7 +357,6 @@ body.modal-open {
 .pets-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
   padding: 0;
   width: 100%;
 }
@@ -501,6 +499,20 @@ body.modal-open {
 .products {
   display: none;
 }
+.cart {
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 16px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
 
 .adoption {
   display: none;
@@ -532,7 +544,7 @@ body.modal-open {
 
 .petknowledge {
 }
-.petknowledge-container {
+.petknowledge__container {
   flex-shrink: 0;
   width: 414px;
 }
@@ -595,16 +607,27 @@ body.modal-open {
 .petknowledge-container-petslist-item-text {
 }
 .petknowledge-container-petslist-item-upper{
-transform: translateY(100%);
+position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #f3f1f1;
+    padding: 6px;
+    border-radius: 12px;
+    background-color: rgba(2, 59, 99, 0.42);
+    transform: translateY(100%);
     opacity: 0;
     transition: transform 300ms, opacity 300ms;
     z-index: -1;
+    overflow: hidden;
 }
 .petknowledge-container-petslist-item.active
     > .petknowledge-container-petslist-item-upper {
-    transform: translateY(0);
+     transform: translateY(0);
     opacity: 1;
     z-index: 1;
+    overflow: hidden;
   }
 .petknowledge-container-btn2:hover {
   color: #667479;
@@ -721,12 +744,35 @@ align-self: stretch;
 }
 
 .footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-areas: 
+  "b"
+  "a"
+  "c";
+  justify-content: center;
   flex-wrap: wrap;
   font-size: 0.85rem;
   margin-top: 1rem;
+}
+.footer-bottom-img{
+  grid-area: a;
+}
+.footer-bottom-text{
+  grid-area: b;
+}
+.footer-bottom-links{
+  grid-area: c;
+}
+@media (max-width: 1439.8px) {
+.footer-bottom-img{
+  margin-bottom: 8px;
+}
+.footer-bottom-text{
+  margin-bottom: 8px;
+}
+.footer-bottom-links{
+  margin-bottom: 8px;
+}
 }
 
 .footer-logo svg {
@@ -1589,27 +1635,7 @@ align-self: stretch;
   .petknowledge-container-btn2 {
     display: none;
   }
-  .petknowledge-container-petslist-item-upper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: #f3f1f1;
-    padding: 6px;
-    border-radius: 12px;
-    background-color: rgba(2, 59, 99, 0.42);
-    transform: translateY(100%);
-    opacity: 0;
-    transition: transform 300ms, opacity 300ms;
-    z-index: -1;
-  }
-  .petknowledge-container-petslist-item.active
-    > .petknowledge-container-petslist-item-upper {
-    transform: translateY(0);
-    opacity: 1;
-    z-index: 1;
-  }
+  
   .newsletter-form {
     flex-direction: column;
   }
@@ -1620,6 +1646,7 @@ align-self: stretch;
     display: flex;
 padding: 32px;
   justify-content: space-between;
+  align-items: center;
 }
   .newsletter-text{
     color: #FDFDFD;
@@ -1629,6 +1656,7 @@ padding: 32px;
   line-height: 36px;
   text-transform: capitalize;
   width: 389px;
+  text-align: start;
 }
   .newsletter-btn{
   display: flex; 
